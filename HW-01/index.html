@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
     <title>Homework-01</title>
 </head>
 
 <body>
-    <div id="Content-list">
+    <div id="content-items-list">
         <h1>
             Git Commands Every Developer Should Know:
         </h1>
@@ -112,236 +115,267 @@
             </li>
         </ul>
     </div>
-    <div id="git-config-global-user-name">
-        <H2>
-            git config --global user.name
-        </H2>
-        <p>
-            Setting your username in Git.
-        </p>
-        <p>
-            You can change the name that is associated with your Git commits using the git config command. The new name
-            you set will be visible in any future commits you push to GitHub from the command line. If you'd like to
-            keep your real name private, you can use any text as your Git username.
-        </p>
-        <p>
-            Changing the name associated with your Git commits using git config will only affect future commits and will
-            not change the name used for past commits.
-        </p>
-    </div>
-    <div id="git-config-global-user-email">
-        <H2>
-            git config --global user.email
-        </H2>
-        <p>
-            Setting your commit email address in Git.
-        </p>
-        <p>
-            You can use the git config command to change the email address you associate with your Git commits. The new
-            email address you set will be visible in any future commits you push to GitHub.com from the command line.
-            Any commits you made prior to changing your commit email address are still associated with your previous
-            email address.
-        </p>
-    </div>
-    <div id="git-init">
-        <H2>
-            git init
-        </H2>
-        <p>
-            This command creates an empty Git repository - basically a .git directory with subdirectories for objects,
-            refs/heads, refs/tags, and template files. An initial branch without any commits will be created.
-        </p>
-    </div>
-    <div id="git-status">
-        <H2>
-            git status
-        </H2>
-        <p>
-            The Git status command gives us all the necessary information about the current branch.
-        </p>
-    </div>
-    <div id="git-add">
-        <H2>
-            git add
-        </H2>
-        <p>
-            This command updates the index using the current content found in the working tree, to prepare the content
-            staged for the next commit. It typically adds the current content of existing paths as a whole, but with
-            some options it can also be used to add content with only part of the changes made to the working tree files
-            applied, or remove paths that do not exist in the working tree anymore.
-        </p>
-        <p>
-            The "index" holds a snapshot of the content of the working tree, and it is this snapshot that is taken as
-            the contents of the next commit. Thus after making any changes to the working tree, and before running the
-            commit command, you must use the add command to add any new or modified files to the index.
-        </p>
-        <p>
-            This command can be performed multiple times before a commit. It only adds the content of the specified
-            file(s) at the time the add command is run; if you want subsequent changes included in the next commit, then
-            you must run git add again to add the new content to the index.
-        </p>
-        <p>
-            The git status command can be used to obtain a summary of which files have changes that are staged for the
-            next commit.
-        </p>
-    </div>
-    <div id="git-commit">
-        <H2>
-            git commit
-        </H2>
-        <p>
-            Create a new commit containing the current contents of the index and the given log message describing the
-            changes. The new commit is a direct child of HEAD, usually the tip of the current branch, and the branch is
-            updated to point to it (unless no branch is associated with the working tree, in which case HEAD is
-            "detached" as described in git-checkout).
-        </p>
-    </div>
-    <div id="git-log">
-        <H2>
-            git log
-        </H2>
-        <p>
-            Shows the commit logs.
-        </p>
-        <p>
-            List commits that are reachable by following the parent links from the given commit(s), but exclude commits
-            that are reachable from the one(s) given with a ^ in front of them. The output is given in reverse
-            chronological order by default.
-        </p>
-        <p>
-            You can think of this as a set operation. Commits reachable from any of the commits given on the command
-            line form a set, and then commits reachable from any of the ones given with ^ in front are subtracted from
-            that set. The remaining commits are what comes out in the commands output. Various other options and paths
-            parameters can be used to further limit the result.
-        </p>
-    </div>
-    <div id="git-checkout">
-        <H2>
-            git checkout
-        </H2>
-        <p>
-            Updates files in the working tree to match the version in the index or the specified tree. If no pathspec
-            was given, git checkout will also update HEAD to set the specified branch as the current branch.
-        </p>
-    </div>
-    <div id="git-branch">
-        <H2>
-            git branch
-        </H2>
-        <p>
-            List, create, or delete branches.
-        </p>
-    </div>
-    <div id="git-push">
-        <H2>
-            git push
-        </H2>
-        <p>
-            Update remote refs along with associated objects.
-        </p>
-        <p>
-            Updates remote refs using local refs, while sending objects necessary to complete the given refs.
-        </p>
-    </div>
-    <div id="git-pull">
-        <H2>
-            git pull
-        </H2>
-        <p>
-            Fetch from and integrate with another repository or a local branch.
-        </p>
-        <p>
-            Incorporates changes from a remote repository into the current branch. If the current branch is behind the
-            remote, then by default it will fast-forward the current branch to match the remote. If the current branch
-            and the remote have diverged, the user needs to specify how to reconcile the divergent branches with
-            --rebase or --no-rebase (or the corresponding configuration option in pull.rebase)
-        </p>
-    </div>
-    <div id="git-merge">
-        <H2>
-            git merge
-        </H2>
-        <p>
-            Join two or more development histories together.
-        </p>
-        <p>
-            Incorporates changes from the named commits (since the time their histories diverged from the current
-            branch) into the current branch. This command is used by git pull to incorporate changes from another
-            repository and can be used by hand to merge changes from one branch into another.
-        </p>
-    </div>
-    <div id="git-clone">
-        <H2>
-            git clone
-        </H2>
-        <p>
-            Clone a repository into a new directory.
-        </p>
-        <p>
-            Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the
-            cloned repository (visible using git branch --remotes), and creates and checks out an initial branch that is
-            forked from the cloned repositorys currently active branch.
-        </p>
-    </div>
-    <div id="git-revert">
-        <H2>
-            git revert
-        </H2>
-        <p>
-            Revert some existing commits.
-        </p>
-        <p>
-            Given one or more existing commits, revert the changes that the related patches introduce, and record some new commits that record them. This requires your working tree to be clean (no modifications from the HEAD commit).
-        </p>
-    </div>
-    <div id="git-reset">
-        <H2>
-            git reset
-        </H2>
-        <p>
-            Reset current HEAD to the specified state.
-        </p>
-    </div>
-    <div id="git-rebase">
-        <H2>
-            git rebase
-        </H2>
-        <p>
-            Reapply commits on top of another base tip.
-        </p>
-    </div>
-    <div id="git-cherry-pick">
-        <H2>
-            git cherry-pick
-        </H2>
-        <p>
-            Apply the changes introduced by some existing commits.
-        </p>
-        <p>
-            Given one or more existing commits, apply the change each one introduces, recording a new commit for each. This requires your working tree to be clean (no modifications from the HEAD commit).
-        </p>
-    </div>
-    <div id="git-stash">
-        <H2>
-            git stash
-        </H2>
-        <p>
-            Stash the changes in a dirty working directory away
-        </p>
-        <p>
-            Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.
-        </p>
-    </div>
-    <div id="gitignore">
-        <H2>
-            gitignore
-        </H2>
-        <p>
-            A gitignore file specifies intentionally untracked files that Git should ignore. Files already tracked by Git are not affected
-        </p>
-        <p>
-            Each line in a gitignore file specifies a pattern. When deciding whether to ignore a path, Git normally checks gitignore patterns from multiple sources, with the following order of precedence, from highest to lowest (within one level of precedence, the last matching pattern decides the outcome).
-        </p>
+    <div id="content">
+        <div id="git-config-global-user-name">
+            <H2>
+                git config --global user.name
+            </H2>
+            <p>
+                Setting your username in Git.
+            </p>
+            <p>
+                You can change the name that is associated with your Git commits using the git config command. The new
+                name
+                you set will be visible in any future commits you push to GitHub from the command line. If you'd like to
+                keep your real name private, you can use any text as your Git username.
+            </p>
+            <p>
+                Changing the name associated with your Git commits using git config will only affect future commits and
+                will
+                not change the name used for past commits.
+            </p>
+        </div>
+        <div id="git-config-global-user-email">
+            <H2>
+                git config --global user.email
+            </H2>
+            <p>
+                Setting your commit email address in Git.
+            </p>
+            <p>
+                You can use the git config command to change the email address you associate with your Git commits. The
+                new
+                email address you set will be visible in any future commits you push to GitHub.com from the command
+                line.
+                Any commits you made prior to changing your commit email address are still associated with your previous
+                email address.
+            </p>
+        </div>
+        <div id="git-init">
+            <H2>
+                git init
+            </H2>
+            <p>
+                This command creates an empty Git repository - basically a .git directory with subdirectories for
+                objects,
+                refs/heads, refs/tags, and template files. An initial branch without any commits will be created.
+            </p>
+        </div>
+        <div id="git-status">
+            <H2>
+                git status
+            </H2>
+            <p>
+                The Git status command gives us all the necessary information about the current branch.
+            </p>
+        </div>
+        <div id="git-add">
+            <H2>
+                git add
+            </H2>
+            <p>
+                This command updates the index using the current content found in the working tree, to prepare the
+                content
+                staged for the next commit. It typically adds the current content of existing paths as a whole, but with
+                some options it can also be used to add content with only part of the changes made to the working tree
+                files
+                applied, or remove paths that do not exist in the working tree anymore.
+            </p>
+            <p>
+                The "index" holds a snapshot of the content of the working tree, and it is this snapshot that is taken
+                as
+                the contents of the next commit. Thus after making any changes to the working tree, and before running
+                the
+                commit command, you must use the add command to add any new or modified files to the index.
+            </p>
+            <p>
+                This command can be performed multiple times before a commit. It only adds the content of the specified
+                file(s) at the time the add command is run; if you want subsequent changes included in the next commit,
+                then
+                you must run git add again to add the new content to the index.
+            </p>
+            <p>
+                The git status command can be used to obtain a summary of which files have changes that are staged for
+                the
+                next commit.
+            </p>
+        </div>
+        <div id="git-commit">
+            <H2>
+                git commit
+            </H2>
+            <p>
+                Create a new commit containing the current contents of the index and the given log message describing
+                the
+                changes. The new commit is a direct child of HEAD, usually the tip of the current branch, and the branch
+                is
+                updated to point to it (unless no branch is associated with the working tree, in which case HEAD is
+                "detached" as described in git-checkout).
+            </p>
+        </div>
+        <div id="git-log">
+            <H2>
+                git log
+            </H2>
+            <p>
+                Shows the commit logs.
+            </p>
+            <p>
+                List commits that are reachable by following the parent links from the given commit(s), but exclude
+                commits
+                that are reachable from the one(s) given with a ^ in front of them. The output is given in reverse
+                chronological order by default.
+            </p>
+            <p>
+                You can think of this as a set operation. Commits reachable from any of the commits given on the command
+                line form a set, and then commits reachable from any of the ones given with ^ in front are subtracted
+                from
+                that set. The remaining commits are what comes out in the commands output. Various other options and
+                paths
+                parameters can be used to further limit the result.
+            </p>
+        </div>
+        <div id="git-checkout">
+            <H2>
+                git checkout
+            </H2>
+            <p>
+                Updates files in the working tree to match the version in the index or the specified tree. If no
+                pathspec
+                was given, git checkout will also update HEAD to set the specified branch as the current branch.
+            </p>
+        </div>
+        <div id="git-branch">
+            <H2>
+                git branch
+            </H2>
+            <p>
+                List, create, or delete branches.
+            </p>
+        </div>
+        <div id="git-push">
+            <H2>
+                git push
+            </H2>
+            <p>
+                Update remote refs along with associated objects.
+            </p>
+            <p>
+                Updates remote refs using local refs, while sending objects necessary to complete the given refs.
+            </p>
+        </div>
+        <div id="git-pull">
+            <H2>
+                git pull
+            </H2>
+            <p>
+                Fetch from and integrate with another repository or a local branch.
+            </p>
+            <p>
+                Incorporates changes from a remote repository into the current branch. If the current branch is behind
+                the
+                remote, then by default it will fast-forward the current branch to match the remote. If the current
+                branch
+                and the remote have diverged, the user needs to specify how to reconcile the divergent branches with
+                --rebase or --no-rebase (or the corresponding configuration option in pull.rebase)
+            </p>
+        </div>
+        <div id="git-merge">
+            <H2>
+                git merge
+            </H2>
+            <p>
+                Join two or more development histories together.
+            </p>
+            <p>
+                Incorporates changes from the named commits (since the time their histories diverged from the current
+                branch) into the current branch. This command is used by git pull to incorporate changes from another
+                repository and can be used by hand to merge changes from one branch into another.
+            </p>
+        </div>
+        <div id="git-clone">
+            <H2>
+                git clone
+            </H2>
+            <p>
+                Clone a repository into a new directory.
+            </p>
+            <p>
+                Clones a repository into a newly created directory, creates remote-tracking branches for each branch in
+                the
+                cloned repository (visible using git branch --remotes), and creates and checks out an initial branch
+                that is
+                forked from the cloned repositorys currently active branch.
+            </p>
+        </div>
+        <div id="git-revert">
+            <H2>
+                git revert
+            </H2>
+            <p>
+                Revert some existing commits.
+            </p>
+            <p>
+                Given one or more existing commits, revert the changes that the related patches introduce, and record
+                some new commits that record them. This requires your working tree to be clean (no modifications from
+                the HEAD commit).
+            </p>
+        </div>
+        <div id="git-reset">
+            <H2>
+                git reset
+            </H2>
+            <p>
+                Reset current HEAD to the specified state.
+            </p>
+        </div>
+        <div id="git-rebase">
+            <H2>
+                git rebase
+            </H2>
+            <p>
+                Reapply commits on top of another base tip.
+            </p>
+        </div>
+        <div id="git-cherry-pick">
+            <H2>
+                git cherry-pick
+            </H2>
+            <p>
+                Apply the changes introduced by some existing commits.
+            </p>
+            <p>
+                Given one or more existing commits, apply the change each one introduces, recording a new commit for
+                each. This requires your working tree to be clean (no modifications from the HEAD commit).
+            </p>
+        </div>
+        <div id="git-stash">
+            <H2>
+                git stash
+            </H2>
+            <p>
+                Stash the changes in a dirty working directory away
+            </p>
+            <p>
+                Use git stash when you want to record the current state of the working directory and the index, but want
+                to go back to a clean working directory. The command saves your local modifications away and reverts the
+                working directory to match the HEAD commit.
+            </p>
+        </div>
+        <div id="gitignore">
+            <H2>
+                gitignore
+            </H2>
+            <p>
+                A gitignore file specifies intentionally untracked files that Git should ignore. Files already tracked
+                by Git are not affected
+            </p>
+            <p>
+                Each line in a gitignore file specifies a pattern. When deciding whether to ignore a path, Git normally
+                checks gitignore patterns from multiple sources, with the following order of precedence, from highest to
+                lowest (within one level of precedence, the last matching pattern decides the outcome).
+            </p>
+        </div>
     </div>
 </body>
 
