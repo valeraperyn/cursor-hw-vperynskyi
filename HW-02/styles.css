@@ -1,33 +1,42 @@
 article {
     margin: 5% 10%;
 }
+
 header {
     font-family: Georgia;
     margin-bottom: 0;
 }
+
 section {
     font-family: Arial;
 }
-.intro>p{
+
+.intro>p {
     margin-top: 30px;
 }
+
 img {
     margin: 10px 0 10px 0;
     width: 50%;
     height: 250px;
 }
+
 .part-1>p {
     margin-bottom: 0;
 }
+
 #p-without-margin {
     margin-top: 0;
 }
+
 .part-2>h2 {
     margin-bottom: 0;
 }
+
 .part-2>p {
     margin: 0;
 }
+
 ul {
     margin-left: 20px;
     margin-top: 0;
