@@ -35,7 +35,7 @@ body {
 
 header {
     position: absolute;
-    top: 659px;
+    top: 59px;
     left: 223px;
     line-height: 48px;
     color: #0B2239;
@@ -59,7 +59,7 @@ header {
 
 section {
     position: relative;
-    top: 1109px;
+    top: 459px;
     left: 223px;
     width: 1488px;
     height: 1430px;
@@ -119,6 +119,7 @@ section>span {
     height: 990px;
     left: 24px;
     top: 228px;
+    flex-basis: content;
 }
 
 .frame146 {
@@ -126,6 +127,7 @@ section>span {
     gap: 24px;
     width: 1440px;
     height: 148px;
+    flex-grow: 1;
     flex-basis: content;
 }
 
@@ -142,8 +144,6 @@ section>span {
     position: relative;
     width: 1200px;
     height: 40px;
-    /* left: calc(50% - 1200px/2);
-    top: calc(50% - 40px/2); */
 }
 
 .frame72>p {
@@ -152,8 +152,6 @@ section>span {
     font-size: 13px;
     line-height: 20px;
     color: #FFFFFF;
-    flex: none;
-    order: 0;
     flex-grow: 1;
 }
 
@@ -218,8 +216,6 @@ section>span {
     position: relative;
     width: 749px;
     height: 20px;
-    /* left: calc(50% - 749px/2);
-    top: calc(50% - 20px/2);  */
 }
 
 .frame93 {
@@ -256,6 +252,7 @@ section>span {
     gap: 24px;
     width: 560px;
     height: 160px;
+    flex-grow: 1;
     flex-basis: content;
     order: 1;
 }
@@ -361,9 +358,6 @@ section>span {
     width: 469px;
     height: 40px;
     color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
 .b02>.frame71 {
@@ -380,9 +374,6 @@ section>span {
     width: 29px;
     height: 20px;
     color: #26262B;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .frame150 {
@@ -395,6 +386,7 @@ section>span {
     height: 206px;
     flex-basis: content;
     order: 2;
+    flex-grow: 1;
 }
 
 .frame149 {
@@ -431,9 +423,6 @@ section>span {
     font-weight: 500;
     font-size: 16px;
     color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .frame5>p {
@@ -468,9 +457,6 @@ section>span {
     gap: 8px;
     text-align: left;
     color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .c01>.frame4>.frame3 {
@@ -494,9 +480,6 @@ section>span {
     line-height: 16px;
     text-align: center;
     color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .c03 {
@@ -600,6 +583,7 @@ section>span {
     gap: 24px;
     width: 680px;
     height: 260px;
+    flex-grow: 1;
     flex-basis: content;
     order: 3;
 }
@@ -609,6 +593,7 @@ section>span {
     gap: 40px;
     width: 680px;
     height: 280px;
+    flex-basis: content;
 }
 
 .d01 {
@@ -627,8 +612,6 @@ section>span {
     padding: 0px;
     width: 256px;
     height: 120px;
-    padding: 0;
-    /* align-self: stretch; */
 }
 
 .frame99>#cookies {
@@ -641,7 +624,7 @@ section>span {
     line-height: 24px;
     text-align: center;
     color: #15295A;
-    margin-bottom:  0;
+    margin: 0;
     order: 0;
 }
 
@@ -652,7 +635,6 @@ section>span {
     line-height: 24px;
     text-align: center;
     color: #15295A;
-    flex: none;
     order: 1;
 }
 
@@ -682,47 +664,44 @@ section>span {
     gap: 12px;
     width: 320px;
     height: 137px;
-    background: #FFFFFF;
-    box-shadow: 0px 8px 32px rgba(10, 3, 89, 0.1);
     font-family: 'SFProText';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 32px rgba(10, 3, 89, 0.1);
     border-radius: 4px;
     order: 1;
 }
 
 .d02>p {
-    width: 288px;
+    width: 320px;
     height: 60px;
     color: #000000;
-    /* flex: none;
-    order: 0; */
-    /* align-self: stretch; */
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .d02>.frame4 {
     justify-content: space-between;
     padding: 0px;
     gap: 8px;
-    width: 288px;
+    width: 320px;
     height: 33px;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     order: 1;
-    align-self: stretch;
 }
 
 .d02>.frame4>p {
     width: 95px;
     height: 17px;
-    text-align: center;
+    text-align: left;
+    font-weight: 600;
     color: #6666FF;
-    /* flex: none;
-    order: 0;
-    flex-grow: 0; */
+    margin: 0%;
 }
 
 .d02>.frame4>.frame3 {
@@ -733,6 +712,7 @@ section>span {
     height: 33px;
     background: #6666FF;
     border-radius: 4px;
+    align-self: stretch;
     order: 1;
 }
 
@@ -740,8 +720,7 @@ section>span {
     width: 48px;
     height: 17px;
     text-align: center;
+    font-weight: 600;
     color: #FFFFFF;
-    /* flex: none;
-    order: 0;
-    flex-grow: 0; */
+    padding: 0;
 }
