@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.section {
+    width: 100vw;
+    position: relative;
+}
+
+/* app-download section  */
+.app-download {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 0px;
+    left: 0px;
+    background: #ED4C5C;
+}
+
+.left-text {
+    position: absolute;
+    left: 165px;
+    top: 122px;
+    width: 445px;
+    height: auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.left-text>p:first-child {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.app-download-link {
+    position: relative;
+    width: 134px;
+    height: 32px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.diamond {
+    transform: translate(-20%, -85%);
+}
+
+.down {
+    transform: translate(-168%,-105%);
+}
+
+.up {
+    transform: translate(-280%,0);
+}
+
+.link {
+   display: inline;
+   text-align: center;
+}
+
+.appstore{
+    transform: translate(-85%,0);
+}
+
+.slider {
+    position: absolute;
+    width: 533px;
+    height: 311px;
+    left: 50%;
+    top: 94px;
+}
+
+.img {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hands {
+    width: 383px;
+    height: 267px;
+    background: url(./imgs/hands.jpg), #C4C4C4;
+    left: -44px;
+    opacity: 0.5;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.friends {
+    width: 383px;
+    height: 267px;
+    left: 129px;
+    top: -267px;
+    background: url(./imgs/friends.jpg), #C4C4C4;
+    opacity: 0.5;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.man {
+    width: 445px;
+    height: 311px;
+    left: 44px;
+    top: -556px;
+    background: url(./imgs/man.jpg), #C4C4C4;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+/* section contact-us */
+.contact-us {
+    position: absolute;
+    left: 176px;
+    height: 500px;
+    top: 500px;
+    background: #FFFFFF;
+}
+
+.contact-us-box{
+    position: absolute;
+    display: inline-block;
+    top: 117px;
+    width: 50%;
+    margin-left: 0;
+}
+
+.left{
+    height: 160px;
+    width: 445px;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #000000;
+}
+
+.left>p:first-child{
+    height: 107px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.right{
+    left: 875px;
+    width: 540px;
+    height: 305px;
+    position: relative;
+}
+
+.inputs{
+    position: relative;
+    display: inline-block;
+    width: 540px;
+    height: 60px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding-left: 25px;
+    color: rgba(19, 39, 67, 0.5);
+    margin-bottom: 15px;
+}
+
+.container{
+    width: 100%;
+    margin: 0;
+}
+
+.name{
+    float: left;
+    width: 49%;
+    color: rgba(19, 39, 67, 0.5);
+    margin-right: 2%;
+}
+
+.container>.name:last-child{
+    margin-right: 0;
+}
+
+.right>div:first-child{
+    margin-right: 24px;
+}
+
+.inputs p{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%) 
+}
+
+.inputs img{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-150%, -50%); 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.buttom{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #ED4C5C;
+    border: 1.5px solid #ED4C5C;
+    border-radius: 6px;
+}
+
+/* footer section */
+.footer {
+    position: absolute;
+    height: 435px;
+    left: 0px;
+    top: 1045px;
+    background: #c9aaaa;
+}
+
+.contact-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: 166px;
+    top: 130px;
+    font-size: 12px;
+    line-height: 14px;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.ways-of-contact {
+    float: left;
+    text-align: start;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 5%;
+}
+
+.contact-container>div:last-child{
+    margin-right: 0;
+}
+
+.caption-of-contact {
+    position: absolute;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+    height: auto;
+    text-align: left;
+}
+
+.content-of-contact {
+    margin-top: 50px;
+    font-size: 12px;
+    line-height: 150%;
+    max-width: 200px;
+}
+
+span {
+    display: block;
+}
